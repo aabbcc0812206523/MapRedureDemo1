@@ -15,9 +15,9 @@ public class RunJob {
 	
 	public static void main(String[] args) {
 		Configuration config=new Configuration();
-		config.set("fs.defaultFS", "hdfs://192.168.44.140:8020");
-		//config.set("yarn.resourcemanager.hostname", "node1");
-		config.set("mapred.jar", "C:\\Users\\asus\\Desktop\\wc.jar");
+		config.set("fs.defaultFS", "hdfs://192.168.44.137:8020");
+		config.set("yarn.resourcemanager.hostname", "node1");
+		//config.set("mapred.jar", "C:\\Users\\asus\\Desktop\\wc.jar");
 		
 		try {
 			FileSystem fs =FileSystem.get(config);
